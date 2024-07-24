@@ -9,6 +9,10 @@ module.exports = {
     filename: 'app.js'
   },
   resolve: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src')
+    ],
     extensions: ['.js', '.jsx', '.scss', '.css', '.json'],
     alias: {
       "jquery": path.join(__dirname, "./jquery-stub.js")
